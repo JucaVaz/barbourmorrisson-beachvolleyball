@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Barbour/Morrison Beach Volleyball</title>
+  <title>Sponsor Us | Barbour/Morrison Beach Volleyball</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('images/about-bg.jpg') no-repeat center center fixed;
+      background: url('images/sponsor-bg.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #f0f0f0;
     }
@@ -54,7 +54,7 @@
 </head>
 <body>
   <header>
-    <h1>About the Team</h1>
+    <h1>Sponsor Our Journey</h1>
   </header>
   <nav>
     <a href="index.html">Home</a>
@@ -65,15 +65,22 @@
   </nav>
 
   <section>
-    <h2>Our Story</h2>
+    <h2>Why Sponsor Us?</h2>
     <p>
-      We’re Katie and Rachel accidentally became a beach volleyball team and haven’t looked back since.
+      Barbour/Morrison Beach Volleyball is more than a team — we're an example of grit, ambition, and the power of sport to unite communities. Sponsoring us means investing in two determined athletes who are proudly representing Scotland on the international stage.
     </p>
+    <h2>Opportunities</h2>
+    <ul>
+      <li>Brand visibility at national and international tournaments</li>
+      <li>Logo placements on kits, banners, and digital media</li>
+      <li>Mentions and exposure across our growing social media platforms</li>
+      <li>Engagements, appearances, and promotional content opportunities</li>
+    </ul>
+    <h2>Let’s Talk</h2>
     <p>
-      We train in the cold, and squeeze in gym sessions between playing, and working. But we love this sport and we’re proud to be representing Scotland wherever we go.
-    </p>
-    <p>
-      We’re not full-time athletes (yet), but we’ve beaten full-time international teams. We’ve earned spots on podiums, in qualification rounds, and in history books. Now we’re aiming even higher — and we’d love to take you with us.
+      Interested in collaborating or learning more about our sponsor packages?
+      <br />
+      Email us at <a href="mailto:barbourmorrisonbeachvb@gmail.com">barbourmorrisonbeachvb@gmail.com</a>
     </p>
   </section>
 
@@ -82,3 +89,4 @@
   </footer>
 </body>
 </html>
+
