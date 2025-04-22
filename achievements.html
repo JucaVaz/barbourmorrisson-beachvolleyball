@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Achievements | Barbour/Morrison Beach Volleyball</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbour/Morrison Beach Volleyball</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #111;
+      background: url('images/achievements-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #f0f0f0;
     }
     header {
-      background: #1a1a1a;
+      background: rgba(26, 26, 26, 0.85);
       padding: 1em;
       text-align: center;
     }
     header h1 {
-      color: #ffcc00;
       margin: 0;
+      font-size: 2em;
+      color: #ffcc00;
     }
     nav {
       display: flex;
       justify-content: center;
       gap: 2em;
-      background: #222;
+      background: rgba(34, 34, 34, 0.85);
       padding: 1em;
     }
     nav a {
@@ -33,22 +35,36 @@
       font-weight: bold;
     }
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2em auto;
       padding: 2em;
-      background: #1a1a1a;
+      background: rgba(0, 0, 0, 0.7);
       border-radius: 12px;
     }
-    h3 {
-      color: #ffcc00;
+    .players {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
     }
-    ul {
-      padding-left: 1.5em;
+    .player {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1em;
+      text-align: center;
+      width: 280px;
+    }
+    .player img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
     footer {
       text-align: center;
       padding: 1em;
-      background: #1a1a1a;
+      background: rgba(26, 26, 26, 0.85);
       color: #999;
       margin-top: 3em;
     }
@@ -59,7 +75,7 @@
 </head>
 <body>
   <header>
-    <h1>Achievements</h1>
+    <h1>Barbour/Morrison Beach Volleyball</h1>
   </header>
   <nav>
     <a href="index.html">Home</a>
@@ -71,55 +87,35 @@
   </nav>
 
   <section>
-    <h2>Milestones by Year</h2>
-
-    <h3>2020</h3>
-    <ul>
-      <li>Team BM formed</li>
-      <li>2nd place at London UK beach tour 3*</li>
-      <li>1st place Scottish beach tour</li>
-      <li>Limited year due to Covid lockdown</li>
-    </ul>
-
-    <h3>2021</h3>
-    <ul>
-      <li>Sponsorships: Red Bull, Pomberry Swimwear, Urquharts Opticians</li>
-      <li>Multiple podiums in UKBT & Zonal events</li>
-      <li>4th place at UKBT Finals Bournemouth</li>
-      <li>7th place WEVZA France</li>
-    </ul>
-
-    <h3>2022</h3>
-    <ul>
-      <li>Gold at SCA Zonal Event (Iceland)</li>
-      <li>Debut on FIVB World Tour (Turkey, Hungary)</li>
-      <li>Commonwealth Games reserve athletes</li>
-    </ul>
-
-    <h3>2023</h3>
-    <ul>
-      <li>FIVB win in Majorca</li>
-      <li>1st at UKBT Edinburgh</li>
-      <li>4th at CEV Nations Cup Ayr</li>
-    </ul>
-
-    <h3>2024</h3>
-    <ul>
-      <li>4th at Nations Cup Olympic Qualifier – Croatia</li>
-      <li>1st place UKBT 4* Bridlington</li>
-      <li>King and Queen of the Court Debut – London</li>
-    </ul>
-
-    <h3>Indoor</h3>
-    <ul>
-      <li>3x Scottish Cup Wins (2020–2024)</li>
-      <li>2x Premier League Titles</li>
-      <li>Multiple MVP nominations</li>
-    </ul>
+    <h2 style="text-align:center">Meet the Players</h2>
+    <div class="players">
+      <div class="player">
+        <img src="images/rachel.jpg" alt="Rachel Morrison">
+        <h3>Rachel Morrison</h3>
+        <p>26 years old • 5'9" (176cm)<br>Hometown: Ayr, Scotland</p>
+      </div>
+      <div class="player">
+        <img src="images/katie.jpg" alt="Katie Barbour">
+        <h3>Katie Barbour</h3>
+        <p>29 years old • 5'9" (176cm)<br>Hometown: Scotland</p>
+      </div>
+      <div class="player">
+        <img src="images/juca.jpg" alt="Coach Juca">
+        <h3>Coach Juca</h3>
+        <p>Former pro player, coach, volleyball lifer — and always training with the next generation strapped to his back.</p>
+      </div>
+      <div class="player">
+        <img src="images/liam.jpg" alt="Coach Liam">
+        <h3>Coach Liam</h3>
+        <p>Volleyball brain and energy source. Passionate about the game, player development, and good hoodie aesthetics.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
+    <p>Follow us on Instagram: <a href="https://instagram.com/barbourmorrison_beachvb">@barbourmorrison_beachvb</a></p>
     <p>&copy; 2025 Barbour/Morrison Beach Volleyball</p>
   </footer>
 </body>
 </html>
+
