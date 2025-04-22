@@ -35,20 +35,27 @@
       font-weight: bold;
     }
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2em auto;
       padding: 2em;
       background: rgba(0, 0, 0, 0.7);
       border-radius: 12px;
     }
-    .player {
+    .players {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 2em;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+    .player {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1em;
+      text-align: center;
+      max-width: 300px;
     }
     .player img {
-      max-width: 250px;
+      max-width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
@@ -78,16 +85,18 @@
   </nav>
 
   <section>
-    <h2>Meet the Players</h2>
-    <div class="player">
-      <img src="images/rachel.jpg" alt="Rachel Morrison">
-      <h3>Rachel Morrison</h3>
-      <p>26 years old • 5'9" (176cm)<br>Hometown: Ayr, Scotland</p>
-    </div>
-    <div class="player">
-      <img src="images/katie.jpg" alt="Katie Barbour">
-      <h3>Katie Barbour</h3>
-      <p>Bio coming soon...</p>
+    <h2 style="text-align:center">Meet the Players</h2>
+    <div class="players">
+      <div class="player">
+        <img src="images/rachel.jpg" alt="Rachel Morrison">
+        <h3>Rachel Morrison</h3>
+        <p>26 years old • 5'9" (176cm)<br>Hometown: Ayr, Scotland</p>
+      </div>
+      <div class="player">
+        <img src="images/katie.jpg" alt="Katie Barbour">
+        <h3>Katie Barbour</h3>
+        <p>29 Years old - 5'9 (176cm)<br>Hometown: Troon, Scotland </p>
+      </div>
     </div>
   </section>
 
@@ -97,4 +106,3 @@
   </footer>
 </body>
 </html>
-
