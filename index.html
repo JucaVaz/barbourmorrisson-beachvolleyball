@@ -8,11 +8,12 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #111;
+      background: url('images/interview.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #f0f0f0;
     }
     header {
-      background: #1a1a1a;
+      background: rgba(26, 26, 26, 0.85);
       padding: 1em;
       text-align: center;
     }
@@ -25,7 +26,7 @@
       display: flex;
       justify-content: center;
       gap: 2em;
-      background: #222;
+      background: rgba(34, 34, 34, 0.85);
       padding: 1em;
     }
     nav a {
@@ -36,7 +37,9 @@
     section {
       max-width: 900px;
       margin: 2em auto;
-      padding: 0 1em;
+      padding: 2em;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
     }
     .player {
       display: flex;
@@ -47,13 +50,17 @@
     .player img {
       max-width: 250px;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
     footer {
       text-align: center;
       padding: 1em;
-      background: #1a1a1a;
+      background: rgba(26, 26, 26, 0.85);
       color: #999;
       margin-top: 3em;
+    }
+    a {
+      color: #ffcc00;
     }
   </style>
 </head>
@@ -85,7 +92,7 @@
   </section>
 
   <footer>
-    <p>Follow us on Instagram: <a href="https://instagram.com/barbourmorrison_beachvb" style="color:#ffcc00">@barbourmorrison_beachvb</a></p>
+    <p>Follow us on Instagram: <a href="https://instagram.com/barbourmorrison_beachvb">@barbourmorrison_beachvb</a></p>
     <p>&copy; 2025 Barbour/Morrison Beach Volleyball</p>
   </footer>
 </body>
