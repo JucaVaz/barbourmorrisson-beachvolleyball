@@ -33,6 +33,22 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .hero {
+      background-image: url('images/interview.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2em;
+      border-radius: 10px;
+    }
     .section {
       max-width: 900px;
       margin: 2em auto;
@@ -81,6 +97,13 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Barbour/Morrison Beach Volleyball</h1>
+      <p>Scotland’s elite duo, chasing greatness on sand.</p>
+    </div>
+  </section>
+
   <section id="about" class="section">
     <h2>About the Team</h2>
     <div class="card">
@@ -92,20 +115,20 @@
     <h2>Meet the Team</h2>
     <div class="team-grid">
       <div class="card">
-        <img src="https://via.placeholder.com/300x300.png?text=Katie+Barbour" alt="Katie Barbour" />
-        <h3>Katie Barbour</h3>
-        <p>Position: Defender<br />Bio coming soon!</p>
-      </div>
-      <div class="card">
         <img src="images/rachel.jpg" alt="Rachel Morrison" />
         <h3>Rachel Morrison</h3>
         <p>
           Position: Blocker<br />
           Age: 26<br />
-          Height: 5'9\" (176cm)<br />
+          Height: 5'9" (176cm)<br />
           Hometown: Ayr, Scotland<br />
           Rachel is a powerhouse at the net, known for her athleticism and fierce blocking. A passionate athlete from Ayr, she brings energy and experience to every match.
         </p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x300.png?text=Katie+Barbour" alt="Katie Barbour" />
+        <h3>Katie Barbour</h3>
+        <p>Position: Defender<br />Bio coming soon!</p>
       </div>
     </div>
   </section>
@@ -173,7 +196,7 @@
     <h2>Contact Us</h2>
     <div class="card">
       <p>Want to support the team or get in touch?</p>
-      <p>Email: <a href="mailto:barbourmorrisonbeachvb@gmail.com" style="color:#ffcc00">coach@beachvolleyballscotland.com</a></p>
+      <p>Email: <a href="mailto:barbourmorrisonbeachvb@gmail.com" style="color:#ffcc00">barbourmorrisonbeachvb@gmail.com</a></p>
     </div>
   </section>
 
