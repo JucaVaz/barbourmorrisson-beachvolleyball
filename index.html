@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barbour/Morrison Beach Volleyball</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -15,6 +18,9 @@
       background: #1a1a1a;
       padding: 1em;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
     header h1 {
       margin: 0;
@@ -43,11 +49,21 @@
       justify-content: center;
       text-align: center;
       color: white;
+      animation: zoomHero 15s ease-in-out infinite alternate;
+    }
+    @keyframes zoomHero {
+      0% { background-size: 100%; }
+      100% { background-size: 110%; }
     }
     .hero-text {
       background: rgba(0, 0, 0, 0.5);
       padding: 2em;
       border-radius: 10px;
+      animation: fadeIn 2s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .section {
       max-width: 900px;
@@ -59,6 +75,11 @@
       border-radius: 8px;
       padding: 1em;
       margin-bottom: 1.5em;
+      transition: all 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
     }
     .team-grid {
       display: grid;
@@ -100,14 +121,16 @@
   <section class="hero">
     <div class="hero-text">
       <h1>Barbour/Morrison Beach Volleyball</h1>
-      <p>Scotland’s elite duo, chasing greatness on sand</p>
+      <p>Scotland’s elite duo, chasing greatness on sand.</p>
     </div>
   </section>
 
   <section id="about" class="section">
     <h2>About the Team</h2>
     <div class="card">
-      <p>Barbour/Morrison Beach Volleyball is a Scottish team that the misshit most of their shots and claim that they were intendent. If they don't give me a proper bio I will keep this here :D </p>
+      <p>We’re Katie and Rachel — two athletes from Scotland who accidentally became a beach volleyball team and haven’t looked back since.</p>
+      <p>We train in the cold, travel on a shoestring, and squeeze in gym sessions between coaching, studying, and working. But we love this sport and we’re proud to be representing Scotland wherever we go.</p>
+      <p>We’re not full-time athletes (yet), but we’ve beaten full-time international teams. We’ve earned spots on podiums, in qualification rounds, and in history books. Now we’re aiming even higher — and we’d love to take you with us.</p>
     </div>
   </section>
 
@@ -118,17 +141,17 @@
         <img src="images/rachel.jpg" alt="Rachel Morrison" />
         <h3>Rachel Morrison</h3>
         <p>
-          Position: "Defender" yes it has quotes Rachel ahah<br />
+          Position: Blocker<br />
           Age: 26<br />
           Height: 5'9" (176cm)<br />
           Hometown: Ayr, Scotland<br />
-          Rachel is a powerhouse at the net, known for her athleticism and her amazing misshits. A passionate athlete from Ayr, she brings energy and good vibes to the match.
+          Rachel is a powerhouse at the net, known for her athleticism and fierce blocking. A passionate athlete from Ayr, she brings energy and experience to every match.
         </p>
       </div>
       <div class="card">
         <img src="https://via.placeholder.com/300x300.png?text=Katie+Barbour" alt="Katie Barbour" />
         <h3>Katie Barbour</h3>
-        <p>Position: LeBlockerWhoNeverBreaks :P <br />Bio coming soon!</p>
+        <p>Position: Defender<br />Bio coming soon!</p>
       </div>
     </div>
   </section>
@@ -196,7 +219,7 @@
     <h2>Contact Us</h2>
     <div class="card">
       <p>Want to support the team or get in touch?</p>
-      <p>Email: <a href="mailto:barbourmorrisonbeachvb@gmail.com" style="color:#ffcc00">barbourmorrisonbeachvb@gmail.com</a></p>
+      <p>Email: <a href="mailto:coach@beachvolleyballscotland.com" style="color:#ffcc00">coach@beachvolleyballscotland.com</a></p>
     </div>
   </section>
 
